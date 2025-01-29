@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopSnake - Roadmap</title>
+    <style>
+        /* Stijl consistent met hoofdpagina */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffcc00, #ff0066);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #6600cc, #ff0066);
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff;
+            text-transform: uppercase;
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff0066;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff, 0 0 40px #ffcc00, 0 0 60px #ff0066;
+            }
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .section p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 20px;
+            background: linear-gradient(45deg, #ffcc00, #ff0066);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
+        }
+
+        footer {
+            background: linear-gradient(to right, #6600cc, #ff0066);
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TopSnake - Roadmap</h1>
+    </header>
+      <div class="hero"> 
+        <h2>The Year of the Snake</h2>
+        <img src="snake.jpg" alt="Snake">
+              </div>
+    <div class="section">
+        <h2>Our Roadmap</h2>
+        <p><strong>Phase 1:</strong> Launch the TopSnake community and build the platform.</p>
+        <p><strong>Phase 2:</strong> Organize snake-themed competitions and release unique NFTs.</p>
+        <p><strong>Phase 3:</strong> Host cultural events celebrating the Year of the Snake.</p>
+        <p><strong>Phase 4:</strong> Expand into educational and awareness programs about Chinese zodiac traditions.</p>
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 TopSnake. All rights reserved. | Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Discord</a></p>
+    </footer>
+</body>
+</html>
