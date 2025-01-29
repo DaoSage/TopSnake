@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopSnake - Chinese Year of the Snake</title>
+    <style>
+        /* Basisopmaak */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffcc00, #ff0066);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #6600cc, #ff0066);
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #fff;
+            text-transform: uppercase;
+            animation: glow 2s infinite;
+        }
+
+        /* Animaties */
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ffcc00, 0 0 30px #ff0066;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff, 0 0 40px #ffcc00, 0 0 60px #ff0066;
+            }
+        }
+
+        .hero {
+            padding: 60px 20px;
+            background: radial-gradient(circle, rgba(255, 204, 0, 0.8), rgba(255, 0, 102, 0.9));
+        }
+        .hero img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 4px solid #ffcc00;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.6);
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .hero p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            background: linear-gradient(45deg, #ffcc00, #ff0066);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: linear-gradient(to right, #6600cc, #ff0066);
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TopSnake</h1>
+    </header>
+    <div class="hero">
+        <img src="snake.jpg" alt="Snake">
+        <h2>The Year of the Snake</h2>
+        <p>Celebrate the elegance, wisdom, and strength of the snake with TopSnake! A journey of charm and power awaits in the Chinese Year of the Snake.</p>
+        <a href="#about" class="button">Learn More</a>
+        <a href="#roadmap" class="button">View Roadmap</a>
+    </div>
+    <div class="section" id="about">
+        <h2>About TopSnake</h2>
+        <p>TopSnake symbolizes transformation, resilience, and adaptability. Join the celebration of this majestic creature in the Chinese zodiac as we embrace its qualities and share its story with the world.</p>
+    </div>
+    <div class="section" id="roadmap">
+        <h2>Roadmap</h2>
+        <p>Phase 1: Launch the TopSnake community and platform.</p>
+        <p>Phase 2: Host snake-themed events and art competitions.</p>
+        <p>Phase 3: Expand into educational and cultural programs.</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 TopSnake. All rights reserved. | Follow us on <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Discord</a></p>
+    </footer>
+</body>
+</html>
